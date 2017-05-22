@@ -1,5 +1,7 @@
-﻿using AspNetCore.Models;
+﻿using AspNetCore.Controllers.Resources;
+using AspNetCore.Models;
 using AspNetCore.Persistence;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,15 +14,21 @@ namespace AspNetCore.Controllers
     public class UsersController : Controller
     {
         private readonly SDDbContext context;
-        public UsersController(SDDbContext context)
+
+        private readonly IMapper mapper;
+
+        public UsersController(SDDbContext context, IMapper mapper)
         {
+            this.mapper = mapper;
             this.context = context;
         }
 
         [HttpGet("/api/users")]
-        public async Task<IEnumerable<User>> GetUsers()
+        public async Task<IEnumerable<UserResource>> GetUsers()
         {
-            return await context.Users.Include(m => m.Referrals).ToListAsync();
+            var users = await context.Users.Include(m => m.Referrals).ToListAsync();
+
+            return mapper.Map<List<User>, List<UserResource>>(users);
         }
     }
 }

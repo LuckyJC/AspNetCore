@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "44a88ea8c16b820c007745165d06246081a9c7e0"
+    "signature": "dd6bd5e1c1d63cca355f233ead611e3a0e3f35a9"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,8 @@
     ".NETCoreApp,Version=v1.1": {
       "aspnetcore/1.0.0": {
         "dependencies": {
+          "AutoMapper": "6.0.2",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "1.2.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore": "1.1.1",
           "Microsoft.AspNetCore.Mvc": "1.1.2",
@@ -39,6 +41,48 @@
         },
         "compile": {
           "AspNetCore.dll": {}
+        }
+      },
+      "automapper/6.0.2": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.Linq.Queryable": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        }
+      },
+      "automapper.extensions.microsoft.dependencyinjection/1.2.0": {
+        "dependencies": {
+          "AutoMapper": "6.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+          "Microsoft.Extensions.DependencyModel": "1.1.1",
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "microsoft.applicationinsights/2.2.0": {
@@ -1336,6 +1380,9 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Specialized.dll": {}
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Collections.Specialized.dll": {}
         }
       },
       "system.componentmodel.primitives/4.3.0": {
@@ -3264,6 +3311,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "automapper/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uI4uPyibgP4+2zn21fVqy0ep+eYeB5IcfjanyUESj+F0qcrOYpAW4iH2+xKET0vfhgJn4U1c4xN3stKUhygTmQ==",
+      "path": "automapper/6.0.2",
+      "hashPath": "automapper.6.0.2.nupkg.sha512"
+    },
+    "automapper.extensions.microsoft.dependencyinjection/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pSWmuxqlE6aZNSljcEC0hXEGHrswi2ukYGDiypcBNYMLaOwPxpp4LmT9z9Eqb3EDweC1S9uRSLQPiuSRhwxVow==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/1.2.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.1.2.0.nupkg.sha512"
     },
     "microsoft.applicationinsights/2.2.0": {
       "type": "package",

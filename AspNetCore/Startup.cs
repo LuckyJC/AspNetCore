@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using AspNetCore.Persistence;
+using AutoMapper;
 
 namespace AspNetCore
 {
@@ -29,6 +30,8 @@ namespace AspNetCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper();
+
             services.AddDbContext<SDDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("JimmySQL")));
 
             // Add framework services.
