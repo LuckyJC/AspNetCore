@@ -1,0 +1,9 @@
+c:\Projects\AspNetCore\AspNetCore\bin\Debug\netcoreapp1.1\AspNetCore.deps.json
+c:\Projects\AspNetCore\AspNetCore\bin\Debug\netcoreapp1.1\AspNetCore.runtimeconfig.json
+c:\Projects\AspNetCore\AspNetCore\bin\Debug\netcoreapp1.1\AspNetCore.runtimeconfig.dev.json
+c:\Projects\AspNetCore\AspNetCore\bin\Debug\netcoreapp1.1\AspNetCore.dll
+c:\Projects\AspNetCore\AspNetCore\bin\Debug\netcoreapp1.1\AspNetCore.pdb
+c:\Projects\AspNetCore\AspNetCore\obj\Debug\netcoreapp1.1\AspNetCore.csprojResolveAssemblyReference.cache
+c:\Projects\AspNetCore\AspNetCore\obj\Debug\netcoreapp1.1\AspNetCore.AssemblyInfo.cs
+c:\Projects\AspNetCore\AspNetCore\obj\Debug\netcoreapp1.1\AspNetCore.dll
+c:\Projects\AspNetCore\AspNetCore\obj\Debug\netcoreapp1.1\AspNetCore.pdb
