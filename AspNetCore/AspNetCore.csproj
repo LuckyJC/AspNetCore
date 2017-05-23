@@ -12,6 +12,7 @@
 
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+    <UserSecretsId>179b216b-f2b2-463a-902e-e2a9736e1995</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.0.2" />

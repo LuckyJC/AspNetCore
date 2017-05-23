@@ -8,7 +8,7 @@ using AspNetCore.Persistence;
 namespace AspNetCore.Migrations
 {
     [DbContext(typeof(SdDbContext))]
-    partial class SDDbContextModelSnapshot : ModelSnapshot
+    partial class SdDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
