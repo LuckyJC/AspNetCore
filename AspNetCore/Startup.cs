@@ -32,7 +32,7 @@ namespace AspNetCore
         {
             services.AddAutoMapper();
 
-            services.AddDbContext<SDDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("JimmySQL")));
+            services.AddDbContext<SdDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("JimmySQL")));
 
             // Add framework services.
             services.AddMvc();

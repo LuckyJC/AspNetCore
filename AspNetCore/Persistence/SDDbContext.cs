@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace AspNetCore.Persistence
 {
-    public class SDDbContext : DbContext
+    public class SdDbContext : DbContext
     {
-        public SDDbContext(DbContextOptions<SDDbContext> options)
+        public SdDbContext(DbContextOptions<SdDbContext> options)
             : base(options)
         {
         }

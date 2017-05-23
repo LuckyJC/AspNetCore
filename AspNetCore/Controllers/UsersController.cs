@@ -13,11 +13,11 @@ namespace AspNetCore.Controllers
 {
     public class UsersController : Controller
     {
-        private readonly SDDbContext context;
+        private readonly SdDbContext context;
 
         private readonly IMapper mapper;
 
-        public UsersController(SDDbContext context, IMapper mapper)
+        public UsersController(SdDbContext context, IMapper mapper)
         {
             this.mapper = mapper;
             this.context = context;

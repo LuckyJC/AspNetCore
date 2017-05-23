@@ -7,7 +7,7 @@ using AspNetCore.Persistence;
 
 namespace AspNetCore.Migrations
 {
-    [DbContext(typeof(SDDbContext))]
+    [DbContext(typeof(SdDbContext))]
     [Migration("20170522230626_SeedDatabase")]
     partial class SeedDatabase
     {
