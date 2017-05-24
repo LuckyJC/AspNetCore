@@ -1,7 +1,26 @@
-﻿@{
+﻿@section metatags
+{
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/Home/About" />
+    <meta name="ember-app/config/environment" content="%7B%22modulePrefix%22%3A%22ember-app%22%2C%22environment%22%3A%22Development%22%2C%22baseURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22rootElement%22%3A%22%23EASContent%22%2C%22name%22%3A%22ember-app%22%2C%22version%22%3A%220.0.0+a1c65ceb%22%7D%2C%22exportApplicationGlobal%22%3Atrue%7D" />
+    <link rel="stylesheet" href="~/lib/ember/vendor.css" /> 
+    <link rel="stylesheet" href="~/lib/ember/ember-app.css" />
+}
+
+@{
     ViewData["Title"] = "About";
 }
 <h2>@ViewData["Title"].</h2>
 <h3>@ViewData["Message"]</h3>
 
 <p>Use this area to provide additional information.</p>
+
+<div id="EASContent">
+
+</div>
+
+@section scripts
+{
+    <script src="~/lib/ember/vendor.js"></script>
+    <script src="~/lib/ember/ember-app.js"></script> 
+}
