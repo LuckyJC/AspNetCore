@@ -30,9 +30,15 @@ namespace AspNetCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //need to register interface; any instance of IVehicleRepository will create VehicleRepository
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
+            services.AddScoped<IFeatureRepository, FeatureRepository>();
+            services.AddScoped<IMakeRepository, MakeRepository>();
+            
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddAutoMapper();
 
-            services.AddDbContext<SdDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("JimmySQL")));
+            services.AddDbContext<SdDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
 
             // Add framework services.
             services.AddMvc();

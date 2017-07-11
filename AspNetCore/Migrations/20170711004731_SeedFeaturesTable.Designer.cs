@@ -8,9 +8,10 @@ using AspNetCore.Persistence;
 namespace AspNetCore.Migrations
 {
     [DbContext(typeof(SdDbContext))]
-    partial class SdDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170711004731_SeedFeaturesTable")]
+    partial class SeedFeaturesTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
